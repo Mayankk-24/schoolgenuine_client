@@ -22,8 +22,11 @@ function ImageSlider() {
         <Marquee pauseOnHover gradient>
           <div className="flex gap-x-20">
             {Images.map((item, index) => (
-              <div key={index} className="flex items-center justify-center mr-7">
-                <img src={item.src} alt="" className="w-24 lg:w-32 " />
+              <div
+                key={index}
+                className="flex items-center justify-center mr-10"
+              >
+                <img src={item.src} alt="" className="w-16 lg:w-20 " />
               </div>
             ))}
           </div>
