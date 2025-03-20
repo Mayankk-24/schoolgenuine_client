@@ -35,19 +35,19 @@ function Quate() {
             },
           }}
         >
-          <div className="relative flex items-center justify-center w-[650px] h-[300px] mb-28 md:mb-0 md:mr-20 lg:mr-0">
+          <div className="relative flex items-center justify-center w-[250px] sm:w-[350px] md:w-[650px] h-[300px] mb-28 md:mb-0 md:mr-20 lg:mr-0">
             {/* Faded Background Glow */}
             <div className="absolute w-[360px] h-[280px] bg-blue-200 opacity-50 rounded-full blur-xl"></div>
 
             {/* Background Animated Rings */}
             <motion.div
-              className="absolute w-[520px] h-[420px] border-2 border-blue-500 rounded-full"
+              className="absolute w-[200px] sm:w-[300px] md:w-[520px] h-[150px] md:h-[420px] border-2 border-blue-500 rounded-full"
               animate={{ rotate: 360 }}
               transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
             ></motion.div>
 
             <motion.div
-              className="absolute w-[500px] h-[400px] border-2 border-blue-300 rounded-full"
+              className="absolute w-[200px] sm:w-[300px] md:w-[500px] h-[100px] md:h-[400px] border-2 border-blue-300 rounded-full"
               animate={{ rotate: -360 }}
               transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
             ></motion.div>
@@ -71,7 +71,7 @@ function Quate() {
             </motion.div>
           </div>
           <motion.div
-            className="flex flex-col gap-y-5 pr-10"
+            className="flex flex-col gap-y-5 md:pr-10"
             variants={{
               hidden: { opacity: 0, x: -30 },
               visible: { opacity: 1, x: 0 },

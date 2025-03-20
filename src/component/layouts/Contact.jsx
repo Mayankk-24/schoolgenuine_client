@@ -6,7 +6,9 @@ function Contact() {
       <div className="flex justify-center py-32">
         <div className="w-[35%]">
           <div className="flex flex-col justify-center items-center gap-y-3">
-            <h6 className="text-[#FF6551] text-sm font-bold text-center">Newsletter</h6>
+            <h6 className="text-[#FF6551] text-sm font-bold text-center">
+              Newsletter
+            </h6>
             <h2 className="text-[#252B42] text-2xl font-bold text-center">
               Most Popular Courses
             </h2>
@@ -19,12 +21,12 @@ function Contact() {
             <input
               type="text"
               placeholder="Your email"
-              className="bg-[#E5E5E5] w-full py-3 pl-3 rounded-tl-md rounded-bl-md"
+              className="bg-[#E5E5E5] w-full py-3 pl-4 rounded-tl-md rounded-bl-md focus:outline-none"
             />
             <button
               className="text-white font-bold text-sm"
               style={{
-                height:'48px',
+                height: "48px",
                 background: "#FF6551",
                 borderTopRightRadius: "5px",
                 borderBottomRightRadius: "5px",

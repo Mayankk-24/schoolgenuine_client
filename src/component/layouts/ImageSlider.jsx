@@ -20,13 +20,13 @@ function ImageSlider() {
     <>
       <div className="py-10">
         <Marquee pauseOnHover gradient>
-          <div className="flex gap-x-20">
+          <div className="flex items-center gap-x-20">
             {Images.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center mr-10"
+                className="flex items-center justify-center mr-20"
               >
-                <img src={item.src} alt="" className="w-16 lg:w-20 " />
+                <img src={item.src} alt="" className="w-16 lg:w-20" />
               </div>
             ))}
           </div>

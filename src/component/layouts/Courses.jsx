@@ -74,7 +74,7 @@ function Courses() {
                       hidden: { opacity: 0, y: 30 },
                       visible: { opacity: 1, y: 0 },
                     }}
-                    className="w-[348px] rounded-md hover:-translate-y-1.5 transition-transform duration-200 ease-linear"
+                    className="md:w-[348px] rounded-md hover:-translate-y-1.5 transition-transform duration-200 ease-linear"
                     key={index}
                   >
                     <div className="w-full h-[300px] relative">

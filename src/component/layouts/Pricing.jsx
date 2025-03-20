@@ -64,7 +64,7 @@ function Pricing() {
             {Pricing.map((item, index) => {
               return (
                 <div
-                  className="relative w-[360px] bg-white shadow-lg rounded-md py-12 px-10 hover:-translate-y-1.5 transition-transform duration-200 ease-linear"
+                  className="relative md:w-[360px] bg-white shadow-lg rounded-md py-12 px-10 hover:-translate-y-1.5 transition-transform duration-200 ease-linear"
                   key={index}
                 >
                   <div>

@@ -10,23 +10,23 @@ function Header() {
   ];
   return (
     <>
-      <main className="max-w-[1322px] mx-auto px-24 py-5 flex items-center justify-between">
+      <main className="max-w-[1322px] mx-auto md:px-24 py-5 flex items-center justify-between">
         <div>
-          <h3 className="text-[#252B42] text-2xl font-bold">Brandname</h3>
+          <h3 className="text-[#252B42] text-2xl font-bold hover:cursor-pointer">Brandname</h3>
         </div>
-        <div className="flex justify-between items-center gap-x-7">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-x-7">
           {Links.map((link, index) => {
             return (
-              <a className="text-[#737373] font-bold text-sm" key={index}>
+              <a className="text-[#737373] font-bold text-lg hover:cursor-pointer" key={index}>
                 {link.name}
               </a>
             );
           })}
         </div>
-        <div className="flex items-center gap-10 pr-12">
+        <div className="flex flex-col md:flex-row items-center gap-10 pr-12">
           <button
-            className="text-[#FF6551] outline-none border-none"
-            style={{ padding: "0px", background: "transparent" }}
+            className="text-[#FF6551] hover:bg-[#FF6551] hover:text-white transition-all duration-300 ease-in-out hover:shadow-xl"
+            style={{border:'1px solid #FF6551'}}
           >
             Login
           </button>

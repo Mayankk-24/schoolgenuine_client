@@ -40,7 +40,7 @@ function HeroSection() {
         </div>
         <div className="w-full flex justify-center items-center overflow-x-hidden">
           <div className="absolute top-16 mx-auto flex justify-between">
-            <div className="flex flex-col gap-y-7 pt-16 mr-24">
+            <div className="flex flex-col gap-y-7 pt-16 mr-0 md:mr-24">
               <div className="flex flex-col gap-y-8">
                 <h5 className="text-base text-[#FF6551] font-bold">
                   For Better Future
@@ -56,31 +56,31 @@ function HeroSection() {
               </div>
               <div className="flex gap-3">
                 <button
-                  className="text-white font-bold text-sm hover:scale-100 transition duration-200 hover:shadow-gray-300 hover:shadow-xl"
-                  style={{ background: "#FF6551", borderRadius: "5px" }}
+                  className="text-white font-bold bg-[#FF6551] text-sm hover:scale-100 transition duration-200 hover:shadow-gray-300 hover:shadow-lg"
+                  style={{ borderRadius: "5px" }}
                 >
                   Get Quote Now
                 </button>
                 <button
-                  className="text-[#FF6551] font-bold text-sm hover:bg-[#FF6551] hover:text-white transition-colors duration-200"
+                  className="text-[#FF6551] font-bold text-sm hover:bg-[#FF6551] hover:text-white transition-colors duration-300 ease-linear hover:shadow-lg"
                   style={{ borderRadius: "5px", border: "1px solid #FF6551" }}
                 >
                   Learn More
                 </button>
               </div>
             </div>
-            <div>
+            <div className="hidden md:block">
               <img src="/Assets/none.png" alt="boy" className="h-[621px]" />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 lg:gap-x-10 relative md:absolute z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 lg:gap-x-10 relative md:absolute z-10 px-10 md:px-0">
             {Cards.map((item, index) => {
               return (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 }}
-                  className="bg-white h-[300px] w-[328px] shadow-lg rounded-md mb-5 mt-4 lg:mb-0 md:mt-0 lg:mt-0 px-10 pt-5 flex flex-col gap-y-8"
+                  className="bg-white h-[300px] md:w-[328px] shadow-lg rounded-md mb-5 mt-4 lg:mb-0 md:mt-0 lg:mt-0 px-10 pt-5 flex flex-col gap-y-8"
                   key={index}
                 >
                   <motion.div
@@ -92,7 +92,7 @@ function HeroSection() {
                         ease: "linear",
                       },
                     }}
-                    className={`size-[70px] rounded-[10px] flex items-center justify-center`}
+                    className={`size-[70px] rounded-[10px] flex items-center justify-center hover:cursor-pointer`}
                     style={{ backgroundColor: item.color }}
                   >
                     <img src={item.img} alt="" />
