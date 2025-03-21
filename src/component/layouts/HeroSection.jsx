@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../common/Header";
 import { motion } from "framer-motion";
+import { Button } from "@mui/material";
 
 function HeroSection() {
   const Cards = [
@@ -39,8 +40,8 @@ function HeroSection() {
           <div className="bg-[#184C99] h-[700px]"></div>
         </div>
         <div className="w-full flex justify-center items-center overflow-x-hidden">
-          <div className="absolute top-16 mx-auto flex justify-between">
-            <div className="flex flex-col gap-y-7 pt-16 mr-0 md:mr-24">
+          <div className="absolute top-16 mx-auto flex justify-between md:px-5 lg:px-0">
+            <div className="flex flex-col px-10 md:px-0 gap-y-7 pt-16 mr-0 md:mr-24">
               <div className="flex flex-col gap-y-8">
                 <h5 className="text-base text-[#FF6551] font-bold">
                   For Better Future
@@ -55,18 +56,27 @@ function HeroSection() {
                 </p>
               </div>
               <div className="flex gap-3">
-                <button
-                  className="text-white font-bold bg-[#FF6551] text-sm hover:scale-100 transition duration-200 hover:shadow-gray-300 hover:shadow-lg"
-                  style={{ borderRadius: "5px" }}
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
+                  className="text-white font-bold text-sm bg-[#FF6551] transition-all duration-200 ease-linear hover:shadow-gray-300 hover:shadow-lg active:scale-75 flex items-center justify-center"
+                  style={{ borderRadius: "5px", padding: "10px 20px" }}
                 >
                   Get Quote Now
-                </button>
-                <button
+                </motion.button>
+
+                {/* <button
+                  className="text-[#FF6551] font-bold text-sm hover:bg-[#FF6551] hover:text-white transition-colors duration-300 ease-linear hover:shadow-lg active:scale-95"
+                  style={{ borderRadius: "5px", border: "1px solid #FF6551" }}
+                >
+                  Learn More
+                </button> */}
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
                   className="text-[#FF6551] font-bold text-sm hover:bg-[#FF6551] hover:text-white transition-colors duration-300 ease-linear hover:shadow-lg"
                   style={{ borderRadius: "5px", border: "1px solid #FF6551" }}
                 >
                   Learn More
-                </button>
+                </motion.button>
               </div>
             </div>
             <div className="hidden md:block">

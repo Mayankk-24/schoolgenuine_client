@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { IoIosHeart } from "react-icons/io";
 import { IoCheckmark } from "react-icons/io5";
@@ -72,7 +73,7 @@ function Pricing() {
                       <IoIosHeart color="#fff" size={48} />
                     </div>
                     {item.tag && (
-                      <div className="size-[90px] bg-[#E77C40] flex justify-center items-center rounded-full text-white font-bold text-2xl absolute -right-10 -top-10">
+                      <div className="size-[90px] bg-[#E77C40] flex justify-center items-center rounded-full text-white font-bold text-2xl absolute -right-9 -top-9">
                         New
                       </div>
                     )}
@@ -96,12 +97,32 @@ function Pricing() {
                     </p>
                   </div>
                   <div className="my-7">
-                    <button
+                    {/* <button
                       className="text-white font-bold text-sm w-full hover:shadow-xl hover:scale-105 transition-all duration-200"
                       style={{ background: "#FF6551", borderRadius: "5px" }}
                     >
                       Try for free
-                    </button>
+                    </button> */}
+                    <Button
+                      variant="contained"
+                      sx={{
+                        background: "#FF6551",
+                        color: "#fff",
+                        borderRadius: "5px",
+                        // padding: "10px 20px",
+                        width: "100%",
+                        marginTop: "10px",
+                        textTransform: "none",
+                        fontSize: "17px",
+                        fontWeight: "500",
+                        "&:active": {
+                          scale: "0.9",
+                        },
+                        transition: "all 0.2s ease-in-out ",
+                      }}
+                    >
+                      Try for free
+                    </Button>
                   </div>
                   <div className="flex flex-col gap-y-3">
                     {features.map((item, index) => {

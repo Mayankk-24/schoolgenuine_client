@@ -77,7 +77,7 @@ function Header() {
             </div>
             <div className="flex flex-col items-center gap-5 px-5">
               <button
-                className="text-[#FF6551] hover:bg-[#FF6551] w-full hover:text-white transition-all duration-300 ease-in-out hover:shadow-xl"
+                className="text-[#FF6551] hover:bg-[#FF6551] w-full hover:text-white transition-all duration-300 ease-in-out hover:shadow-xl "
                 style={{ border: "1px solid #FF6551" }}
               >
                 Login

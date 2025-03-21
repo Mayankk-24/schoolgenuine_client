@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-
 :root {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -42,7 +41,6 @@ h1 {
 button {
   @apply rounded-md border border-transparent px-4 py-2 text-base font-medium cursor-pointer;
 }
-
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;

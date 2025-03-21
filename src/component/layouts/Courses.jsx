@@ -132,7 +132,7 @@ function Courses() {
                           </h5>
                         </div>
                         <button
-                          className="text-[#FF6551] w-fit flex items-center gap-x-4 hover:bg-[#FF6551] hover:text-white hover:shadow-lg transition-colors duration-200 group"
+                          className="text-[#FF6551] w-fit flex items-center gap-x-4 hover:bg-[#FF6551] hover:text-white hover:shadow-lg transition-all duration-200 active:scale-95 md:active:scale-none group"
                           style={{
                             borderRadius: "37px",
                             border: "1px solid #FF6551",

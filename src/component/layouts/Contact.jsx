@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 
 function Contact() {
@@ -23,19 +24,24 @@ function Contact() {
               placeholder="Your email"
               className="bg-[#E5E5E5] w-full py-3 pl-4 rounded-tl-md rounded-bl-md focus:outline-none"
             />
-            <button
-              className="text-white font-bold text-sm"
-              style={{
+            <Button
+              variant="contained"
+              sx={{
                 height: "48px",
                 background: "#FF6551",
                 borderTopRightRadius: "5px",
                 borderBottomRightRadius: "5px",
                 borderTopLeftRadius: "0px",
                 borderBottomLeftRadius: "0px",
+                fontWeight: 600,
+                "&:hover": {
+                  background: "#E04A37",
+                },
+                transition:'all 0.3s ease-in-out'
               }}
             >
               Subscribe
-            </button>
+            </Button>
           </div>
         </div>
       </div>
