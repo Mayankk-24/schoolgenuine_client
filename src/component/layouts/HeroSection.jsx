@@ -102,7 +102,7 @@ function HeroSection() {
                         ease: "linear",
                       },
                     }}
-                    className={`size-[70px] rounded-[10px] flex items-center justify-center hover:cursor-pointer`}
+                    className="size-[70px] rounded-[10px] flex items-center justify-center hover:cursor-pointer"
                     style={{ backgroundColor: item.color }}
                   >
                     <img src={item.img} alt="" />

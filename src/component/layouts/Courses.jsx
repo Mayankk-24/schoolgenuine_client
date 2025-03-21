@@ -1,7 +1,7 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
-import { IoMdEye, IoMdHeartEmpty, IoMdStar } from "react-icons/io";
+import { IoMdEye, IoMdHeart, IoMdHeartEmpty, IoMdStar } from "react-icons/io";
 import { LuDownload } from "react-icons/lu";
 import { motion } from "framer-motion";
 
@@ -87,9 +87,17 @@ function Courses() {
                         Sale
                       </div>
                       <div className="flex items-center justify-center w-full gap-x-2 absolute bottom-6">
-                        <div className="size-10 bg-white rounded-full flex justify-center items-center">
-                          <IoMdHeartEmpty size={25} />
+                        <div className="size-10 bg-white rounded-full flex justify-center items-center transition duration-300 hover:bg-[#FF6551] group">
+                          <IoMdHeartEmpty
+                            size={25}
+                            className="text-gray-500 transition duration-300 group-hover:hidden"
+                          />
+                          <IoMdHeart
+                            size={25}
+                            className="text-white hidden transition duration-300 group-hover:block"
+                          />
                         </div>
+
                         <div className="size-10 bg-white rounded-full flex justify-center items-center">
                           <FiShoppingCart size={20} />
                         </div>

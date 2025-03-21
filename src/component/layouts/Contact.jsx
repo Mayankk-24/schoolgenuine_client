@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
       <div className="flex justify-center py-32">
-        <div className="w-[35%]">
+        <div className="px-6 md:px-0">
           <div className="flex flex-col justify-center items-center gap-y-3">
             <h6 className="text-[#FF6551] text-sm font-bold text-center">
               Newsletter
