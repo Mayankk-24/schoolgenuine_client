@@ -3,7 +3,7 @@ import React from "react";
 import { IoIosHeart } from "react-icons/io";
 import { IoCheckmark } from "react-icons/io5";
 
-function Pricing() {
+function Pricing({id}) {
   const Pricing = [
     {
       id: 1,
@@ -47,7 +47,7 @@ function Pricing() {
   ];
   return (
     <>
-      <div className="py-24">
+      <div id={id} className="py-24">
         <div className="w-[80%] mx-auto">
           <div className="flex flex-col gap-y-3">
             <h6 className="text-[#FF6551] text-sm font-bold">

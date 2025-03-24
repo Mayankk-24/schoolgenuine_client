@@ -3,7 +3,7 @@ import Header from "../common/Header";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
 
-function HeroSection() {
+function HeroSection({id}) {
   const Cards = [
     {
       id: 1,
@@ -30,7 +30,7 @@ function HeroSection() {
   return (
     <>
       {/* layout */}
-      <main className="relative lg:mb-[280px]">
+      <main id={id} className="relative lg:mb-[280px]">
         <div className="absolute w-full z-10 top-0">
           <Header />
         </div>

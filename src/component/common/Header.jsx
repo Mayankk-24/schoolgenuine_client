@@ -3,17 +3,28 @@ import React from "react";
 import { FaArrowRightLong, FaBarsStaggered } from "react-icons/fa6";
 
 function Header() {
-  const Links = [
-    { name: "Home", url: "/" },
-    { name: "Product", url: "/product" },
-    { name: "Pricing", url: "/pricing" },
-    { name: "Contact", url: "/contact" },
-  ];
   const [open, setOpen] = React.useState(false);
 
+  const Links = [
+    { name: "Home", id: "hero" },
+    { name: "Courses", id: "courses" },
+    { name: "Pricing", id: "pricing" },
+    { name: "Contact", id: "contact" },
+  ];
+
+  const handleScroll = (id) => {
+    if (id) {
+      document
+        .getElementById(id)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      setOpen(false);
+    }
+  };
+  
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+
   return (
     <>
       <main className="max-w-[1322px] mx-auto px-10 md:px-24 py-5 flex items-center justify-between">
@@ -28,6 +39,7 @@ function Header() {
               return (
                 <a
                   className="text-[#737373] font-bold text-lg hover:cursor-pointer"
+                  onClick={() => handleScroll(link.id)}
                   key={index}
                 >
                   {link.name}
@@ -69,7 +81,10 @@ function Header() {
                      hover:bg-gray-400/70 hover:text-white active:bg-gray-500 focus:bg-gray-400/70 active:text-white focus:text-white"
                   key={index}
                 >
-                  <span className="font-semibold text-lg cursor-pointer py-2 w-full text-center">
+                  <span
+                    className="font-semibold text-lg cursor-pointer py-2 w-full text-center"
+                    onClick={() => handleScroll(link.id)}
+                  >
                     {link.name}
                   </span>
                 </div>

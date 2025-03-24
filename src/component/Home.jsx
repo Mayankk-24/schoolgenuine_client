@@ -12,13 +12,13 @@ import ImageSlider from "./layouts/ImageSlider";
 function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroSection id="hero" />
       <Quate />
       <ImageSlider />
-      <Courses />
-      <Pricing />
+      <Courses id="courses" />
+      <Pricing id="pricing" />
       <Review />
-      <Contact />
+      <Contact id="contact" />
       <Footer />
     </>
   );

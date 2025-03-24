@@ -1,4 +1,6 @@
 import React from "react";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 import { IoLocationOutline, IoMail } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
@@ -13,16 +15,16 @@ function Footer() {
               Company Info
             </h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 About Us
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Carrier
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 We are hiring
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Blog
               </li>
             </ul>
@@ -30,16 +32,16 @@ function Footer() {
           <div>
             <h5 className="text-[#252B42] text-base font-bold mb-6">Legal</h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 About Us
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Carrier
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 We are hiring
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Blog
               </li>
             </ul>
@@ -49,16 +51,16 @@ function Footer() {
               Features
             </h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Business Marketing
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 User Analytic
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Live Chat
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Unlimited Support
               </li>
             </ul>
@@ -68,16 +70,16 @@ function Footer() {
               Resources
             </h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 IOS & Android
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Watch a Demo
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 Customers
               </li>
-              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+              <li className="text-[#737373] text-sm font-bold hover:text-[#FF6551] hover:cursor-pointer">
                 API
               </li>
             </ul>
@@ -115,7 +117,7 @@ function Footer() {
                 style={{ fontWeight: "600" }}
               >
                 {" "}
-                Sughosh.  
+                Sughosh.
               </a>
             </h6>
 
@@ -124,9 +126,18 @@ function Footer() {
             </h6>
           </div>
           <div className="flex items-center gap-x-5">
-            <FaFacebook color="#FF6551" size={20} />
-            <FaInstagram color="#FF6551" size={20} />
-            <FaTwitter color="#FF6551" size={20} />
+            <FaFacebook
+              className="text-[#FF6551] hover:text-[#1877F2] hover:scale-110 transition-all duration-200 ease-in-out cursor-pointer"
+              size={20}
+            />
+            <FaInstagram
+              className="text-[#FF6551] hover:text-pink-600/90 hover:scale-110 transition-all duration-200 ease-in-out cursor-pointer"
+              size={20}
+            />
+            <FaTwitter
+              className="text-[#FF6551] hover:text-[#1da1f2] hover:scale-110 transition-all duration-200 ease-in-out cursor-pointer"
+              size={20}
+            />
           </div>
         </div>
       </div>

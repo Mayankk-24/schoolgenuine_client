@@ -5,7 +5,7 @@ import { IoMdEye, IoMdHeart, IoMdHeartEmpty, IoMdStar } from "react-icons/io";
 import { LuDownload } from "react-icons/lu";
 import { motion } from "framer-motion";
 
-function Courses() {
+function Courses({id}) {
   const Cards = [
     {
       id: 1,
@@ -28,7 +28,7 @@ function Courses() {
   ];
   return (
     <>
-      <div className="bg-[#26335D] py-28">
+      <div id={id} className="bg-[#26335D] py-28">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
