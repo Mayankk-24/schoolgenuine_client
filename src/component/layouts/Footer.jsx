@@ -13,23 +13,35 @@ function Footer() {
               Company Info
             </h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold">About Us</li>
-              <li className="text-[#737373] text-sm font-bold">Carrier</li>
-              <li className="text-[#737373] text-sm font-bold">
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                About Us
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Carrier
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
                 We are hiring
               </li>
-              <li className="text-[#737373] text-sm font-bold">Blog</li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Blog
+              </li>
             </ul>
           </div>
           <div>
             <h5 className="text-[#252B42] text-base font-bold mb-6">Legal</h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold">About Us</li>
-              <li className="text-[#737373] text-sm font-bold">Carrier</li>
-              <li className="text-[#737373] text-sm font-bold">
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                About Us
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Carrier
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
                 We are hiring
               </li>
-              <li className="text-[#737373] text-sm font-bold">Blog</li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Blog
+              </li>
             </ul>
           </div>
           <div>
@@ -37,14 +49,16 @@ function Footer() {
               Features
             </h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold">
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
                 Business Marketing
               </li>
-              <li className="text-[#737373] text-sm font-bold">
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
                 User Analytic
               </li>
-              <li className="text-[#737373] text-sm font-bold">Live Chat</li>
-              <li className="text-[#737373] text-sm font-bold">
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Live Chat
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
                 Unlimited Support
               </li>
             </ul>
@@ -54,12 +68,18 @@ function Footer() {
               Resources
             </h5>
             <ul className="list-none mt-4 flex flex-col gap-y-3">
-              <li className="text-[#737373] text-sm font-bold">
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
                 IOS & Android
               </li>
-              <li className="text-[#737373] text-sm font-bold">Watch a Demo</li>
-              <li className="text-[#737373] text-sm font-bold">Customers</li>
-              <li className="text-[#737373] text-sm font-bold">API</li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Watch a Demo
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                Customers
+              </li>
+              <li className="text-[#737373] text-sm font-bold hover:text-blue-400">
+                API
+              </li>
             </ul>
           </div>
           <div>
@@ -84,10 +104,23 @@ function Footer() {
         </div>
       </div>
       <div className="bg-[#FAFAFA] w-full py-8">
-        <div className="w-[80%] mx-auto flex justify-between items-center">
-          <div>
+        <div className="md:w-[80%] mx-auto px-5 flex justify-between items-center">
+          <div className="flex items-center gap-x-2">
+            <h6 className="text-[#737373] font-semibold text-sm">
+              Made With Love By
+              <a
+                href="https://sughosh.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: "600" }}
+              >
+                {" "}
+                Sughosh.  
+              </a>
+            </h6>
+
             <h6 className="text-[#737373] font-bold text-sm">
-              Made With Love By Mayank All Right Reserved{" "}
+              All Right Reserved
             </h6>
           </div>
           <div className="flex items-center gap-x-5">

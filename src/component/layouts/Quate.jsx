@@ -20,7 +20,7 @@ function Quate() {
 
   return (
     <>
-      <div className="px-48 mt-[144px] md:mt-[350px]">
+      <div className="px-48 mt-[144px] md:mt-[450px] lg:mt-[350px]">
         <motion.div
           className="flex flex-col gap-y-5 lg:flex-row items-center justify-between my-24"
           initial="hidden"

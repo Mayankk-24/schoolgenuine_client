@@ -40,7 +40,7 @@ function HeroSection() {
           <div className="bg-[#184C99] h-[700px]"></div>
         </div>
         <div className="w-full flex justify-center items-center overflow-x-hidden">
-          <div className="absolute top-16 mx-auto flex justify-between md:px-5 lg:px-0">
+          <div className="absolute top-16 mx-auto flex justify-between md:px-10">
             <div className="flex flex-col px-10 md:px-0 gap-y-7 pt-16 mr-0 md:mr-24">
               <div className="flex flex-col gap-y-8">
                 <h5 className="text-base text-[#FF6551] font-bold">
