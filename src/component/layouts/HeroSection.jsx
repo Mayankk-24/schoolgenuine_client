@@ -3,7 +3,7 @@ import Header from "../common/Header";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
 
-function HeroSection({id}) {
+function HeroSection({ id }) {
   const Cards = [
     {
       id: 1,
@@ -90,7 +90,7 @@ function HeroSection({id}) {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 }}
-                  className="bg-white h-[300px] md:w-[328px] shadow-lg rounded-md mb-5 mt-4 lg:mb-0 md:mt-0 lg:mt-0 px-10 pt-5 flex flex-col gap-y-8"
+                  className="bg-white h-[300px] md:w-[328px] shadow-lg rounded-md mb-5 mt-4 lg:mb-0 md:mt-0 lg:mt-0 px-10 pt-5 flex flex-col gap-y-8 hover:scale-105 transition-transform duration-200 ease-in"
                   key={index}
                 >
                   <motion.div

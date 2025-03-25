@@ -108,13 +108,13 @@ function Footer() {
       <div className="bg-[#FAFAFA] w-full py-8">
         <div className="md:w-[80%] mx-auto px-5 flex justify-between items-center">
           <div className="flex items-center gap-x-2">
-            <h6 className="text-[#737373] font-semibold text-sm">
+            <h6 className="text-[#737373] font-bold text-sm">
               Made With Love By
               <a
                 href="https://sughosh.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ fontWeight: "600" }}
+                style={{ fontWeight: "700" }}
               >
                 {" "}
                 Sughosh.

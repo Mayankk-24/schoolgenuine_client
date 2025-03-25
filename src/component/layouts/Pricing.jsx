@@ -47,7 +47,7 @@ function Pricing({id}) {
   ];
   return (
     <>
-      <div id={id} className="py-24">
+      <div className="py-24">
         <div className="w-[80%] mx-auto">
           <div className="flex flex-col gap-y-3">
             <h6 className="text-[#FF6551] text-sm font-bold">
@@ -61,7 +61,7 @@ function Pricing({id}) {
               the two major realms of Classical physics: Newtonian mechanics{" "}
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center mt-18">
+          <div id={id} className="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center mt-18">
             {Pricing.map((item, index) => {
               return (
                 <div
